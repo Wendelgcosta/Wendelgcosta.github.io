@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #a5a5a5;
+            padding: 10px 20px;
+            display: flex; /* Ativa o Flexbox para o cabeçalho */
+            align-items: center; /* Alinha verticalmente os itens ao centro */
+        }
+
+        header img {
+            height: 200px; /* Ajuste a altura conforme necessário */
+            margin-right: 0px; /* Espaço entre a imagem e o texto */
+        }
+
+        header h1 {
+            flex-grow: 1; /* Faz o título ocupar o espaço restante */
+            text-align: center; /* Centraliza o texto horizontalmente */
+            margin: 0; /* Remove margens padrão do h1 */
+            color: #F30502;
+        }
+        
+        img{
+            margin-bottom: 20px;
+            max-width: 20%;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 0px; 
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #F30502;
+            padding: 0.5em 0;
+            border-radius: 5px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background-color: white;
+            border: 3px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .product-card p {
+            color: #666;
+            margin-bottom: 1px;
+            margin-top: 6px;
+        }
+
+        .product-card .price {
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+
+        .product-card .button {
+            align-content:center;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            background-color: #007bff;
+            color: white;
+            padding: 0.8em 1.5em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card .button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\wende\Desktop\meu_catalogo\imagens\VF Auto Peças1.png" alt="Logotipo">
+        
+        <h1>Nosso Catálogo de Produtos</h1>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Todos os Produtos</a></li>
+            <li><a href="#">Motos</a></li>
+            <li><a href="#">Carros</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="product-card">
+            <img src="https://a-static.mlcdn.com.br/1500x1500/kit-relacao-titan-150-fan-150-serve-titan-fan-160-aco-1045-sem-retentor-riffel/serjaomotopecas2/cod-1632/75979fe41c45de74b0d1773c6ab3d286.jpeg" alt="Produto 1">
+            <h3>Kit Transmissão Titan 150</h3>
+            <p>Titan 150</p>
+            <p>Fan 150</p>
+            <p>Fan 160</p>
+            <p>VEJA MAIS DETALHES.</p>
+            <p class="price">R$ 110,00</p>
+            <a href="#" class="button">Entrar em contato</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://marquinhom.vteximg.com.br/arquivos/ids/197330-1000-1000/04961000_zoom1.jpg?v=637092677430700000" alt="Produto 2">
+            <h3>Óleo Castrol</h3>
+            <p>Óleo 4t Castrol 20w50 Sl Mineral 1L</p>
+            <p class="price">R$ 29,90</p>
+            <a href="https://wa.me/5575982892657" class="button">Entrar em contato</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQU1kWGYMroBlqgpw7FNdW79sQh5_B5AmSKQq05n3laj5s7DnuQ_2wOT-bL7GJbFcSWfvydyQvRW2Vt5DjZDygkvNVsKqRD3M_6tv5LJKrYYusYxW_mQ13V&usqp=CAE" alt="Produto 3">
+            <h3>Painel Titan 150</h3>
+            <p>Titan 150 04 a 08</p>
+            <p>Plug and Play</p>
+            <p class="price">R$ 109,90</p>
+            <a href="#" class="button">Entrar em contato</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSiUs2kTCTNQxV-86QJTGy6YsujVp0ztHqGzf_r1w7b9namE3qZcJXsitrXBqQLoY4nOSFiZ4_UOGGW_vYHXBivamV7UGe7-u-HEHvJk6B3Ae2Cj_EWrFIN&usqp=CAE" alt="Produto 4">
+            <h3>Disco de Embreagem Cg</h3>
+            <p>Compativel:</p>
+            <p>Fan 125, 150, 160</p>
+            <p>Titan 125, 150, 160</p>
+            <p class="price">R$ 36,90</p>
+            <a href="#" class="button">Entrar em contato</a>
+        </div>
+
+        </div>
+
+    <footer>
+        <p>&copy; 2025 VF Auto Peças. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
